@@ -26,6 +26,7 @@ class HeaderAndListAdapter internal constructor(private val mCountriesModelList:
         itemViewHolder.nameTextview.setOnClickListener {
             if (mCountriesModelList[position].Grid_List == "L") {
                 mCountriesModelList[position].Grid_List = "G"
+                itemViewHolder.nameTextview.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.arrow_down_float, 0);
                 val list = mCountriesModelList[position].list
                 list!!.sort()
                 itemViewHolder.list.setHasFixedSize(true)
@@ -35,7 +36,7 @@ class HeaderAndListAdapter internal constructor(private val mCountriesModelList:
                 itemViewHolder.list.adapter = mAdapter
             } else {
                 mCountriesModelList[position].Grid_List = "L"
-
+                itemViewHolder.nameTextview.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.arrow_up_float, 0);
                 val list = mCountriesModelList[position].list
                 list!!.sort()
                 itemViewHolder.list.setHasFixedSize(true)
