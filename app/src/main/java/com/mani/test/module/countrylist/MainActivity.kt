@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity(), ResponseListeners {
                         }
                     }
                     if (country.isNotEmpty()) {
-                        countriesModels.add(CountriesModel(c.toString(), country))
+                        countriesModels.add(CountriesModel(c.toString(), country, "L"))
                     }
                     ++c
                 }

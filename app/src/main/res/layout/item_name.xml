@@ -15,11 +15,12 @@
         android:background="#22000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:drawableRight="@android:drawable/arrow_down_float"
         tools:ignore="RtlSymmetry" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_hor_list"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
